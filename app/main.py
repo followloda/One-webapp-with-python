@@ -1,18 +1,7 @@
-from flask import Flask, send_file
-import os
-app = Flask(__name__)
+from app.lifeboat import app
 
-
-@app.route("/hello")
-def hello():
-    return "Hello World from Flask"
-
-
-@app.route("/")
-def main():
-    index_path = os.path.join(app.static_folder, 'index.html')
-    return send_file(index_path)
 
 if __name__ == "__main__":
-    # Only for debugging while developing
-    app.run(host='0.0.0.0', debug=True, port=80)
+    #Only for debugging while developing
+    #app.run(host='0.0.0.0', debug=True, port=80)
+    app.run(host='127.0.0.1', debug=True, port=8080)
