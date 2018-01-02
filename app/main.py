@@ -1,4 +1,4 @@
-from app.lifeboat import app
+from lifeboat import app
 
 
 if __name__ == "__main__":

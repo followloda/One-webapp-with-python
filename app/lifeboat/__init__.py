@@ -1,5 +1,9 @@
-# -*- endcoding=UTF-8 -*-
 from flask import Flask
-app=Flask(__name__)
+from flask_sqlalchemy import SQLAlchemy
+app = Flask(__name__)
+app.config.from_pyfile("app.conf")
+db = SQLAlchemy(app)
 
-from app.lifeboat import views,models
+
+from lifeboat import views,models
+

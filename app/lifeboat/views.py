@@ -1,6 +1,6 @@
 from flask import Flask, send_file
 import os
-from app.lifeboat import app
+from lifeboat import app
 
 
 
