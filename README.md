@@ -1,4 +1,5 @@
 #one app with flask
+
 uwsgi-nginx-flask python3.6
 
 
@@ -16,6 +17,10 @@ uwsgi-nginx-flask python3.6
 ----
 ##ToDoList
 -添加用户认证
+
 -前端页面展示
--数据库
--添加定时爬取图片
+
+<del>-数据库</del>
+
+
+
